@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: serif;
+    font-size: 24px;
+    color: #333;
+    background-color: whitesmoke;
+    transition: all .3s ease;
+}
+
+
+.dark-mode{
+    color: whitesmoke;
+    background-color: #333;
+}
+
+img{
+    width: 140px;
+    height: 140px;
+}
+
+button {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}

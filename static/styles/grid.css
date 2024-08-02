@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cbd7a9;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+                        "hd hd hd hd hd hd"
+                        "mn mn mn mn sb sb"
+                        "mn mn mn mn sb sb"
+                        "ft ft ft ft ft ft";
+    gap: 1rem;
+    
+}
+
+header{
+    display: grid;
+    grid-area: hd;
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+}
+
+main{
+    grid-area: mn;
+    background-color: red;
+}
+
+aside {
+    display: grid;
+    grid-area: sb;
+    background-color: aquamarine;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+aside  img { 
+    width: 300px;
+    height: 400px;
+    padding-top: 15px;
+    padding-left: 15px;
+    justify-self: center;
+    
+}
+/* Добавить кнопки переключения между картинками (Добавить img в HTML) */
+/* Сделать чтобы текст обтекал картинку */
+
+aside p {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    padding: 75px 15px 75px 15px;
+    background-color: yellow;
+    width: 100%;
+    
+    grid-area: ft;
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+img{
+    width: 100%;
+    
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-item__link{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-media__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 25px;
+}
+
+.scoial_links{
+    width: 36px;
+    height: 36px;
+    background-color: #f2f1fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #d4d2e3;
+}
+
+.copyright{
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.social-media__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.social-media__container > .social_links > #tg{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.social-media__container > .social_links > #hhru{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.social-media__container > .social_links > #vk{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.social-media__container > .social_links > #github{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

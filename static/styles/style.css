@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    background-color: white;
+    color: #333;
+}
+
+.dark-mode{
+    color: whitesmoke;
+    background-color: #333;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:    "hd hd hd hd hd hd hd hd"
+                            "mn mn mn mn mn mn sb sb"
+                            "mn mn mn mn mn mn sb sb"
+                            "ft ft ft ft ft ft ft ft";
+    /* height: 100vh;
+    width: 100vw; */ 
+    /* background-color: #333;
+    color: whitesmoke; */
+    transition: all .3s ease;
+    /* background: url(/static/imgs/keyboard.jpg);
+    background-size: cover; */
+
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid red;
+    grid-area: hd;
+    /* width: 98vw; */
+    /* background-color: #333;
+    color: whitesmoke; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header button{
+    border-radius: 50%;
+}
+
+header .nightModeIcon{
+    
+    width: 60px;
+    height: 60px;
+    
+}
+
+header .dayModeIcon{
+    width: 60px;
+    height: 60px;
+}
+
+header h1{
+    margin-right: 40vw;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h3{
+    font-size: 36px;
+    text-align: center;
+}
+
+.experienceBlock{
+    border: 5px dotted gold;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.experienceBlock h3 {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+.experienceBlock #gogolab{
+    margin-top: 20px;
+}
+
+.experienceBlock #date{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.experienceBlock p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.experienceBlock li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    list-style: circle;
+    margin-left: 15px;
+   
+}
+
+
+
+
+.educationBlock {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.skillsBlock{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.skillsBlock h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    border: 5px solid black;
+    grid-area: mn;
+    /* min-width: 70vw; */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    /* background-image: url(/static/imgs/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family:  sans-serif;
+    /* background-color: #333;
+    color: whitesmoke; */
+    
+}
+
+.contact_info{
+    /* background-color: blueviolet; */
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.recommendations{
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px solid gray;
+    grid-area: sb;
+    /* color: whitesmoke;
+    background-color: #333; */
+    min-height: 900px;
+    /* max-height: 900px; */
+/* justify-self: center; */
+    align-self: self-start;
+    margin-top: 30%;
+}
+
+aside img {
+    display: flex;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    border: 5px dotted gainsboro;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25%;
+    /* float: left; */
+}
+
+aside p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+aside .salarySB {
+    font-family: sans-serif;
+    font-size: 28px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba(11, 165, 16, 0.935);
+}
+
+
+
+footer{
+    max-height: 250px;
+    border: 5px solid green;
+    grid-area: ft;
+    /* background-color: #333; */
+}
+
+
+.bottom-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-media__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 25px;
+    max-height: 104px;
+}
+
+.scoial_links{
+    width: 36px;
+    height: 36px;
+    background-color: #f2f1fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #d4d2e3;
+}
+
+/* footer .bottom-footer .copyright{
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: whitesmoke;
+} */
+.bottom-footer p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* color: whitesmoke; */
+    font-style: italic;
+}
+
+.social-media__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.social-media__container > .social_links > #tg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #tg:hover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #tg:active{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px dashed cyan;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #hhru{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #hhru:hover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #hhru:active{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px dashed cyan;
+    cursor: default;
+}
+
+
+.social-media__container > .social_links > #vk{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #vk:hover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #vk:active{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px dashed cyan;
+    cursor: default;
+}
+
+
+.social-media__container > .social_links > #github{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #github:hover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    cursor: default;
+}
+
+.social-media__container > .social_links > #github:active{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px dashed cyan;
+    cursor: default;
+}
+
+
+
