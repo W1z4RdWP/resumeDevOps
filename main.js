@@ -16,10 +16,26 @@ timeWorkedOnRmk.textContent = Math.floor((firedDate - hireDateRmk)/(24*3600*1000
 
 // блок aside
 function hireBtn() {
-    document.querySelector('aside').style.display = "flex"
+    document.querySelector('.modal').classList.add("open")
     // document.querySelector('aside').style.display = "none"
 }
 
 function hideMe(){
-    document.querySelector('aside').style.display = "none"
+    document.querySelector('.modal').classList.remove("open")
 }
+
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape"){
+        document.querySelector(".modal").classList.remove("open")
+    }
+})
+
+document.querySelector(".modal .modal__box").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+
+document.querySelector(".modal").addEventListener('click', event=>{
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+})
