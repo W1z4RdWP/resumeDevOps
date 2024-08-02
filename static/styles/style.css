@@ -91,7 +91,7 @@ header #hireBtn:hover{
 }
 
 h3{
-    font-size: 36px;
+    font-size: 2.3rem;
     text-align: center;
 }
 
@@ -459,4 +459,332 @@ footer{
 }
 
 
+@media screen and (max-width: 768px) {
 
+    header #nightModeBtn{
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 45px;
+    }
+    
+
+    header .nightModeIcon{
+    
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header #hireBtn{
+        border-radius: 15%;
+        margin-right: 5px;
+        margin-top: 2px;
+        background-color: red;
+        width: 100px;
+        font-family: monospace, sans-serif;
+        font-size: 1.5rem;
+        height: 59px;
+    }
+
+    header #hireBtn:hover{
+        border: 3px solid #333;
+        box-shadow: #333 4px 4px;
+        font-size: 1.8rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .experienceBlock{
+        /* border: 5px dotted gold; */
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding-bottom: 7.5px;
+        padding-left: 7.5px;
+        padding-top: 7.5px;
+    }
+    
+    .experienceBlock h3 {
+        text-align: left;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 5px;
+    
+    }
+    
+    .experienceBlock #gogolab{
+        margin-top: 10px;
+    }
+    
+    .experienceBlock #date{
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+    
+    
+    .experienceBlock p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .experienceBlock li{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1rem;
+        list-style: circle;
+        margin-left: 7.5px;
+       
+    }
+
+    .educationBlock {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1rem;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding-bottom: 7.5px;
+        padding-left: 7.5px;
+        padding-top: 7.5px;
+    }
+    
+    .skillsBlock{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1rem;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding-bottom: 7.5px;
+        padding-left: 7.5px;
+        padding-top: 7.5px;
+    }
+
+    main{
+        
+        grid-area: mn;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        font-family:  sans-serif;
+        margin-left: 10px;
+        
+    }
+    
+    .contact_info{
+        /* background-color: blueviolet; */
+        padding: 5px;
+        margin: 5px;
+        font-size: 9px;
+        width: fit-content;
+    }
+
+    
+    .modal__box{
+        position: relative;
+        max-width: 400px;
+        padding: 25px;
+        z-index: 1;
+        margin: 15px 7.5px;
+        background-color: whitesmoke;
+        transform: scale(0);
+        transition: transform .8s;
+    }
+    
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 3px solid gray;
+        grid-area: sb;
+        width: 100%;
+        min-height: 450px;
+        align-self: self-start;
+        
+    }
+    
+    aside img {
+        display: flex;
+        width: 185px;
+        height: 185px;
+        align-self: center;
+        border: 3px dotted gainsboro;
+        padding: 7.5px;
+        margin: 7.5px;
+        border-radius: 25%;
+        
+    }
+    
+    aside p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.1rem;
+        align-self: center;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    
+    aside .salarySB {
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        align-self: center;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        color: rgba(11, 165, 16, 0.935);
+    }
+    
+    
+    
+    footer{
+        max-height: 125px;
+        /* border: 5px solid green; */
+        grid-area: ft;
+        /* background-color: #333; */
+    }
+    
+    
+    .bottom-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .social-media__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 12px;
+        max-height: 52px;
+    }
+    
+    .scoial_links{
+        width: 20px;
+        height: 20px;
+        background-color: #f2f1fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        
+    }
+
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #d4d2e3;
+        margin-top: 20px;
+    }
+    
+    .bottom-footer p{
+        font-family: 'Roboto';
+        font-size: 10px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+        /* color: whitesmoke; */
+        font-style: italic;
+    }
+    
+    .social-media__container > .social_links > #tg{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #tg:hover{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid red;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #tg:active{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px dashed cyan;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #hhru{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #hhru:hover{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid red;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #hhru:active{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px dashed cyan;
+        cursor: default;
+    }
+    
+    
+    .social-media__container > .social_links > #vk{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #vk:hover{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid red;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #vk:active{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px dashed cyan;
+        cursor: default;
+    }
+    
+    
+    .social-media__container > .social_links > #github{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #github:hover{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid red;
+        cursor: default;
+    }
+    
+    .social-media__container > .social_links > #github:active{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px dashed cyan;
+        cursor: default;
+    }
+    
+
+}
