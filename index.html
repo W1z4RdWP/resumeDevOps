@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="dark.js" defer></script>
     <script src="main.js" defer></script>
 
@@ -15,8 +16,9 @@
 
 
     <header>
-        <button class="btn"><img src="/static/imgs/night-mode.png" alt="nigth" class="nightModeIcon"></button>
+        <button class="btn" id="nightModeBtn"><img src="/static/imgs/night-mode.png" alt="nigth" class="nightModeIcon"></button>
         <h1>Информационная страница обо мне</h1>
+        <button id="hireBtn" onclick="hireBtn()">Нанять</button>
     </header>
     <main>
         <h2>Кузнецов Владислав Александрович</h2>
@@ -26,7 +28,7 @@
                 <p>Эл. почта: kuznets.vlad2002@bk.ru</p>
             </em>
         </div>
-        <h3>DevOps Engineer</h3>
+        <h3>DevOps Engineer</h3><hr>
         <div class="experienceBlock">
             <h3 id="SmileTerr">ООО "32 Жемчужины"</h3>
             <p id="date">янв. 2024г. - н.в. (<time id="expTime"></time> дней)</p>
@@ -44,7 +46,7 @@
                     <li>Восстановление и бэкап данных.</li>
                     <li>Техническая поддержка пользователей</li>
                 </ul>
-           
+            <br><br><br><hr><br>
             <h3 id="rmk">АО "СЗ РМК"</h3>
             <p id="date">мар. 2023г. - сен. 2023г. (<time id="expTimeRmk"></time> дней)</p>
             <p>Системный администратор</p>
@@ -102,8 +104,9 @@
         </div>
 
     </main>
-    <aside id="aside">
-        
+    
+    <aside class="modal">
+        <button id="hideMeBtn"><i class="fa fa-minus-square-o" aria-hidden="true"></i></button>
 
             <img src="/static/imgs/myPhoto1.jpg" alt="myPhoto">
             <p>Кузнецов Владислав Александрович</p>

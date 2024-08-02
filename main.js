@@ -15,5 +15,11 @@ timeWorkedOnRmk.textContent = Math.floor((firedDate - hireDateRmk)/(24*3600*1000
 
 
 // блок aside
-document.getElementById('aside').style.display = "none"
-document.getElementById('aside').style.display = "flex"
+function hireBtn() {
+    document.querySelector('aside').style.display = "flex"
+    // document.querySelector('aside').style.display = "none"
+}
+
+function hideMe(){
+    document.querySelector('aside').style.display = "none"
+}
