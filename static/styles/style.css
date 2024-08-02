@@ -195,59 +195,6 @@ main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-aside{
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 5px solid gray;
-    grid-area: sb;
-    /* color: whitesmoke;
-    background-color: #333; */
-    
-    min-height: 900px;
-    /* max-height: 900px; */
-/* justify-self: center; */
-    align-self: self-start;
-    margin-top: 30%;
-}
-
-aside #hideMeBtn{
-    /* width: 50%;
-    margin-left: 25%;
-    height: 50px;
-     */
-}
-
-aside img {
-    display: flex;
-    width: 370px;
-    height: 370px;
-    align-self: center;
-    border: 5px dotted gainsboro;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 25%;
-    /* float: left; */
-}
-
-aside p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-aside .salarySB {
-    font-family: sans-serif;
-    font-size: 28px;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    color: rgba(11, 165, 16, 0.935);
-}
-
-
 .modal{
     position: fixed;
     top: 0;
@@ -267,7 +214,7 @@ aside .salarySB {
 
 .modal__box{
     position: relative;
-    max-width: 500px;
+    max-width: 800px;
     padding: 45px;
     z-index: 1;
     margin: 30px 15px;
@@ -294,6 +241,60 @@ aside .salarySB {
 .modal.open .modal__box{
     transform: scale(1);
 }
+
+
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px solid gray;
+    grid-area: sb;
+    /* color: whitesmoke;
+    background-color: #333; */
+    width: 100%;
+    min-height: 900px;
+    /* max-height: 900px; */
+/* justify-self: center; */
+    align-self: self-start;
+    
+}
+
+aside img {
+    display: flex;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    border: 5px dotted gainsboro;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25%;
+    /* float: left; */
+}
+
+aside i {
+    text-align: center;
+}
+
+aside p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+aside .salarySB {
+    font-family: sans-serif;
+    font-size: 28px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba(11, 165, 16, 0.935);
+}
+
+
 
 footer{
     max-height: 250px;
