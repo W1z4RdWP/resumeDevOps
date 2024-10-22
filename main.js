@@ -23,6 +23,15 @@ function hireBtn() {
 function hideMe(){
     document.querySelector('.modal').classList.remove("open")
 }
+// блок aside
+function showCertificatesBtn() {
+    document.querySelector('.certificates').classList.add("open")
+    // document.querySelector('aside').style.display = "none"
+}
+
+function hideMe(){
+    document.querySelector('.certificates').classList.remove("open")
+}
 
 
 window.addEventListener('keydown', (e) => {
@@ -36,6 +45,20 @@ document.querySelector(".modal .modal__box").addEventListener('click', event => 
 });
 
 document.querySelector(".modal").addEventListener('click', event=>{
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+})
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape"){
+        document.querySelector(".certificates").classList.remove("open")
+    }
+})
+
+document.querySelector(".certificates .certificates__box").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+
+document.querySelector(".certificates").addEventListener('click', event=>{
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
 })

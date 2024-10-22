@@ -74,6 +74,21 @@ header h1{
     text-align: center;
 }
 
+header #showCertificatesBtn{
+    margin-right: 15px;
+    margin-top: 5px;
+    font-family: monospace, sans-serif;
+    font-size: 2.5rem;
+    width: 280px;
+    background-color: blue;
+}
+
+header #showCertificatesBtn:hover{
+    border: 3px solid #333;
+    box-shadow: #333 4px 4px;
+    font-size: 2.6rem;
+}
+
 header #hireBtn{
     border-radius: 15%;
     margin-right: 15px;
@@ -223,6 +238,8 @@ main{
     transition: transform .8s;
 }
 
+
+
 #hideMeBtn{
     position: absolute;
     top: 8px;
@@ -241,8 +258,54 @@ main{
 .modal.open .modal__box{
     transform: scale(1);
 }
+.certificates.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.certificates.open .certificates__box{
+    transform: scale(1);
+}
 
 
+.certificates{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4, visibility .4s;
+}
+
+
+.certificates__box{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: whitesmoke;
+    transform: scale(0);
+    text-align: center; 
+    transition: transform .8s;
+}
+
+.certificates__box img{
+    max-width: 500px;
+    margin:10px;
+    border: 5px solid gray;
+    
+}
 
 
 aside{
@@ -480,6 +543,22 @@ footer{
         font-size: 1rem;
     }
 
+    header #showCertificatesBtn{
+        margin-right: 5px;
+        margin-top: 2px;
+        font-family: monospace, sans-serif;
+        font-size: 1.5rem;
+        width: 160px;
+        background-color: blue;
+    }
+    
+    header #showCertificatesBtn:hover{
+        border: 3px solid #333;
+        box-shadow: #333 3px 3px;
+        font-size: 1.6rem;
+    }
+    
+
     header #hireBtn{
         border-radius: 15%;
         margin-right: 5px;
@@ -493,7 +572,7 @@ footer{
 
     header #hireBtn:hover{
         border: 3px solid #333;
-        box-shadow: #333 4px 4px;
+        box-shadow: #333 3px 3px;
         font-size: 1.7rem;
     }
     
