@@ -667,8 +667,10 @@ footer{
     .certificates__box{
         display: flex;
         position: relative;
+        overflow: scroll;
         flex-wrap: wrap;
         max-width: 500px;
+        max-height: 500px;
         padding: 25px;
         z-index: 1;
         margin: 15px 7.5px;
