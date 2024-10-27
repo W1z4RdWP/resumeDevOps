@@ -669,9 +669,9 @@ footer{
         position: relative;
         overflow: scroll;
         flex-wrap: wrap;
-        max-width: 500px;
+        max-width: 270px;
         max-height: 500px;
-        padding: 25px;
+        padding: 10px;
         z-index: 1;
         margin: 15px 7.5px;
         background-color: whitesmoke;
@@ -682,7 +682,7 @@ footer{
     
     .certificates__box img{
         max-width: 250px;
-        margin: 5px;
+        
         border: 2.5px solid gray;
         
     }
