@@ -69,7 +69,7 @@ header .dayModeIcon{
 
 
 
-header h1{
+main h1{
     margin-top: 10px;
     text-align: center;
 }
@@ -663,7 +663,30 @@ footer{
         width: fit-content;
     }
 
+
+    .certificates__box{
+        display: flex;
+        position: relative;
+        overflow: scroll;
+        flex-wrap: wrap;
+        max-width: 500px;
+        max-height: 500px;
+        padding: 25px;
+        z-index: 1;
+        margin: 15px 7.5px;
+        background-color: whitesmoke;
+        transform: scale(0);
+        text-align: center; 
+        transition: transform .8s;
+    }
     
+    .certificates__box img{
+        max-width: 250px;
+        margin: 5px;
+        border: 2.5px solid gray;
+        
+    }
+
     .modal__box{
         position: relative;
         max-width: 400px;
