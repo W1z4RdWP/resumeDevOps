@@ -126,14 +126,6 @@ h3{
 
 }
 
-.experienceBlock #gogolab{
-    margin-top: 20px;
-}
-
-.experienceBlock #date{
-    margin-bottom: 10px;
-    font-size: 20px;
-}
 
 
 .experienceBlock p {
@@ -153,7 +145,9 @@ h3{
 }
 
 
-
+.dutiesList li{
+    margin-left: 2%;
+}
 
 .educationBlock {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -175,8 +169,18 @@ h3{
     padding-top: 15px;
 }
 
+.skillList li{
+    list-style-type: circle;
+    margin-left: 2%;
+}
+
 .skillsBlock h5{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projs__block li{
+    list-style-type: circle;
+    margin-left: 2%;
 }
 
 main{
@@ -622,6 +626,22 @@ footer{
         margin-left: 7.5px;
        
     }
+
+    .dutiesList li{
+        margin-left: 1%;
+    }
+
+
+    .skillList li{
+        list-style-type: circle;
+        margin-left: 1%;
+    }
+    .projs__block li{
+        list-style-type: circle;
+        margin-left: 1%;
+    }
+    
+
 
     .educationBlock {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
